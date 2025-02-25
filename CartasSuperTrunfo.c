@@ -22,11 +22,11 @@ int main() {
     printf("Estado: ");
     scanf("%c", &estado1);
     
-    printf("Nome da cidade: ");
-    scanf(" %[^\n]s", nomeCidade1); // " %[^\n]s" serve para aceitar espaços. ex: São Paulo. Tem esse espaço inical para não pular o input
-
     printf("Código da carta: ");
     scanf("%s", codCarta1);
+
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]s", nomeCidade1); // " %[^\n]s" serve para aceitar espaços. ex: São Paulo. Tem esse espaço inical para não pular o input
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -45,11 +45,11 @@ int main() {
     printf("Estado: ");
     scanf(" %c", &estado2);
     
-    printf("Nome da cidade: ");
-    scanf(" %[^\n]s", nomeCidade2);
-
     printf("Código da carta: ");
     scanf("%s", codCarta2);
+
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]s", nomeCidade2);
 
     printf("População: ");
     scanf("%d", &populacao2);
@@ -66,7 +66,7 @@ int main() {
     // Calculo PIB per Capita e Densidade Populacional
     // Primeira Carta
     densidadePop1 = populacao1 / area1;
-    pibPerCapita1 = (pib1 / populacao1) * 1e9; // 1e9 transformando em reais
+    pibPerCapita1 = (pib1 / populacao1) * 1e9;
 
     // Segunda Carta
     densidadePop2 = populacao2 / area2;
@@ -78,8 +78,8 @@ int main() {
     printf("Dados inseridos:\n");
     printf("\nPrimeira Carta:\n");
     printf("Código da carta: %s\n", codCarta1);
-    printf("Cidade: %s\n", nomeCidade1);
     printf("Estado: %c\n", estado1);
+    printf("Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", pib1);
@@ -90,8 +90,8 @@ int main() {
     // Segunda Cidade
     printf("\nSegunda Carta:\n");
     printf("Código da carta: %s\n", codCarta2);
-    printf("Cidade: %s\n", nomeCidade2);
     printf("Estado: %c\n", estado2);
+    printf("Cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
